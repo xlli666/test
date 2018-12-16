@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/ll_order_no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/edit_text_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="@string/order"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_order_no"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="start|center_vertical"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_order_review"
+            style="@style/button_small"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:layout_marginTop="5dp"
+            android:background="@color/loginButton"
+            android:text="@string/review" />
+
+        <Button
+            android:id="@+id/btn_order_confirm"
+            style="@style/button_small"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:layout_marginTop="5dp"
+            android:background="@color/loginButton"
+            android:text="@string/confirm" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/ll_order_no"
+        android:layout_marginStart="@dimen/edit_text_padding"
+        android:text=""
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/tv_order_time"
+        android:layout_marginStart="@dimen/edit_text_padding"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/tv_order_status"
+        android:layout_marginStart="@dimen/edit_text_padding"
+        android:text=""
+        android:textColor="@color/white" />
+    <View
+        style="@style/line_view"
+        android:layout_below="@id/tv_order_detail"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

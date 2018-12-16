@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <xies.academy.hebuni.com.cateringordersystem.util.PubTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_left_right"
+        android:layout_marginStart="@dimen/margin_left_right"
+        android:layout_marginTop="@dimen/margin_top">
+
+        <TextView
+            android:id="@+id/tv_reg_username"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/username" />
+
+        <EditText
+            android:id="@+id/et_reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginStart="@dimen/edit_text_padding"
+            android:layout_toEndOf="@id/tv_reg_username"
+            android:hint=""
+            android:inputType="text"
+            android:lines="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_left_right"
+        android:layout_marginStart="@dimen/margin_left_right">
+
+        <TextView
+            android:id="@+id/tv_reg_password"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/password" />
+
+        <EditText
+            android:id="@+id/et_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginStart="@dimen/edit_text_padding"
+            android:layout_toEndOf="@id/tv_reg_password"
+            android:hint=""
+            android:inputType="textPassword"
+            android:lines="1" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_reg_register"
+        style="@style/button_comm"
+        android:layout_marginTop="@dimen/margin_top"
+        android:background="@color/loginButton"
+        android:text="@string/register"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/startCall"
+        android:icon="@mipmap/start_call"
+        android:title="@string/start_call"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/appShare"
+        android:title="@string/app_share"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/appQrCode"
+        android:title="@string/app_qrCode"
+        app:showAsAction="never"/>
+</menu>

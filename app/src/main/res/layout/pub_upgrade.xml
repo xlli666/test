@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="290dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/border_corner"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/entity_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="3dp"
+            android:background="#00003366"
+            android:gravity="center"
+            android:text="@string/upgrade"
+            android:textColor="@color/black"
+            android:textSize="19sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/dialog_ll_flash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:minHeight="180dp"
+            android:minWidth="250dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/img_description"
+                android:src="@mipmap/progress" />
+
+            <TextView
+                android:id="@+id/tipTextView"
+                android:layout_below="@id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/loading"
+                android:textSize="19sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_ll_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="@style/MyProgressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/downloading"
+            android:textColor="@android:color/black"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</FrameLayout>

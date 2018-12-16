@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_cate_img"
+        android:layout_width="@dimen/cate_item_left_width"
+        android:layout_height="@dimen/cate_item_height"
+        android:layout_margin="@dimen/edit_text_padding"
+        android:contentDescription="@string/img_description" />
+
+    <FrameLayout
+        android:id="@+id/fl_desc"
+        android:layout_width="@dimen/cate_item_middle_width"
+        android:layout_height="@dimen/cate_item_height"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/iv_cate_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text=""
+            android:textSize="@dimen/large_text" />
+
+        <TextView
+            android:id="@+id/tv_cate_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text=""
+            android:textSize="@dimen/large_text" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_count"
+        android:layout_width="@dimen/cate_item_right_width"
+        android:layout_height="@dimen/cate_item_height"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_top">
+
+        <ImageView
+            android:id="@+id/iv_cate_plus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end|bottom"
+            android:background="@mipmap/icon_plus"
+            android:contentDescription="@string/img_description" />
+
+        <TextView
+            android:id="@+id/tv_cate_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="@string/cateDef"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_cate_minus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start|bottom"
+            android:background="@mipmap/icon_minus"
+            android:contentDescription="@string/img_description" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">APP点餐</string>
+
+    <string name="start_call">电话</string>
+    <string name="app_share">分享</string>
+    <string name="app_qrCode">二维码</string>
+
+    <string name="query_btn">查询数据库</string>
+    <string name="viewPageOne">第一张滚动图片</string>
+
+    <string name="upgrade">更新</string>
+    <string name="loading">正在加载,请稍候......</string>
+    <string name="downloading">下载:0%</string>
+    <string name="tab_one">首页</string>
+    <string name="tab_two">点餐</string>
+    <string name="tab_three">购物车</string>
+    <string name="tab_four">我的</string>
+    <string name="img_description">…</string>
+    <string name="username">账号</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="logout">退出</string>
+    <string name="register">注册</string>
+    <string name="orders">\t\t\t订单</string>
+    <string name="order">订单号</string>
+    <string name="submit">提交</string>
+    <string name="suggestions">您的宝贵建议......</string>
+    <string name="review">点评</string>
+    <string name="confirm">确认\n送达</string>
+    <string name="cateDef">0</string>
+    <string name="settleDefLab">￥</string>
+    <string name="settleDefNum">0.0</string>
+    <string name="settle">结算</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

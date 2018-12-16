@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xies.academy.hebuni.com.cateringordersystem.fragment.HomeFragment">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/view_page"
+        android:background="#33000000"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tv_banner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/viewPageOne"
+            android:textColor="@android:color/white" />
+        <LinearLayout
+            android:id="@+id/ll_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
